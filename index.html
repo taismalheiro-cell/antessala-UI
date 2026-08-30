@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antessala — Inteligência tática antes do primeiro 'olá'</title>
+    <meta name="description" content="Automação de inteligência comercial pré-reunião. Dossiê tático, organograma de interlocutores e micro-briefing em 5 pontos.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- TOP NAVIGATION BAR -->
+    <header class="top-nav">
+        <div class="container nav-content">
+            <div class="brand-group">
+                <div class="logo-mark">
+                    <span class="logo-text">ANTESSALA</span>
+                    <span class="pulse-dot"></span>
+                </div>
+                <div class="brand-divider"></div>
+                <p class="brand-slogan">Inteligência tática antes do primeiro 'olá'.</p>
+            </div>
+
+            <div class="nav-actions">
+                <div class="timer-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>PRÓXIMA REUNIÃO EM <strong id="countdown">14:32</strong></span>
+                </div>
+                <button class="btn-whatsapp-preview" id="openWhatsappModal">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                    Ver Push WhatsApp
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN APP CONTAINER -->
+    <main class="main-content container">
+
+        <!-- MEETING HEADER CARD -->
+        <section class="meeting-header-card">
+            <div class="meeting-meta">
+                <div class="meta-tag-group">
+                    <span class="badge badge-orange">REUNIÃO ESTRATÉGICA</span>
+                    <span class="badge badge-zinc">DEMO & PROPOSAL</span>
+                    <span class="badge badge-mono">GOOGLE MEET • 15:00 - 15:45</span>
+                </div>
+                <h1 class="meeting-title">Nexus Tech Solutions <span class="company-sub">x ACME Corp</span></h1>
+                <p class="meeting-context">Pauta principal: Apresentação da plataforma de inteligência e negociação de contrato anual para 40 licenças de SDRs/AEs.</p>
+            </div>
+
+            <div class="meeting-actions">
+                <button class="btn-primary" id="copyBriefingBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span>Copiar Briefing Tático</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- SECTION 1: MICRO-BRIEFING 5 PONTOS TÁTICOS -->
+        <section class="section-container">
+            <div class="section-header">
+                <div class="section-title-wrap">
+                    <span class="section-num">01</span>
+                    <h2>Micro-Briefing de Abertura</h2>
+                </div>
+                <span class="read-time-tag">Leitura em 30 segundos</span>
+            </div>
+
+            <div class="tactical-grid">
+                <div class="tactical-card" data-step="1">
+                    <div class="card-num">01</div>
+                    <div class="card-body">
+                        <span class="card-tag tag-target">INTERLOCUTOR CHAVE</span>
+                        <h3>Dr. Ricardo Silveira (VP de Operações)</h3>
+                        <p>Perfil analítico e orientado a métricas de ROI. Evite rodeios institucionais; foque direto em redução de CAC e ganho de tempo por vendedor.</p>
+                    </div>
+                </div>
+
+                <div class="tactical-card" data-step="2">
+                    <div class="card-num">02</div>
+                    <div class="card-body">
+                        <span class="card-tag tag-signal">GATILHO DE MERCADO</span>
+                        <h3>Captação recente de R$ 18 Milhões</h3>
+                        <p>A empresa fechou rodada Série A há 3 semanas. Estão sob pressão dos investidores para dobrar o time comercial até o Q4.</p>
+                    </div>
+                </div>
+
+                <div class="tactical-card" data-step="3">
+                    <div class="card-num">03</div>
+                    <div class="card-body">
+                        <span class="card-tag tag-pain">DOR MAPEADA</span>
+                        <h3>45 min perdidos por pré-vendedor</h3>
+                        <p>A equipe atual gasta quase 1 hora por reunião fazendo pesquisas manuais no LinkedIn e Google antes de ligar para o prospect.</p>
+                    </div>
+                </div>
+
+                <div class="tactical-card" data-step="4">
+                    <div class="card-num">04</div>
+                    <div class="card-body">
+                        <span class="card-tag tag-alert">OBJEÇÃO PROVÁVEL</span>
+                        <h3>"Já usamos CRM e Sales Engagement"</h3>
+                        <p>Mostre que o <strong>Antessala</strong> não substitui o CRM, mas opera 15 min antes na camada de inteligência e preparação do vendedor.</p>
+                    </div>
+                </div>
+
+                <div class="tactical-card card-highlight" data-step="5">
+                    <div class="card-num">05</div>
+                    <div class="card-body">
+                        <span class="card-tag tag-action">ABORDAGEM RECOMENDADA</span>
+                        <h3>Gancho de Abertura Certeiro</h3>
+                        <p><em>"Ricardo, parabéns pela Série A. Imagino que a prioridade agora seja escalar o time de AEs sem perder a eficiência de conversão por call..."</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: GRAFO NEXALISTA DE INTERLOCUTORES -->
+        <section class="section-container">
+            <div class="section-header">
+                <div class="section-title-wrap">
+                    <span class="section-num">02</span>
+                    <h2>Grafo Nexalista de Interlocutores</h2>
+                </div>
+                <p class="section-desc">Clique nos nós do organograma para ver o perfil psicológico e histórico de cada participante.</p>
+            </div>
+
+            <div class="graph-wrapper card-box">
+                <div class="graph-canvas" id="graphCanvas">
+                    <!-- Dynamic SVG lines drawn via JS -->
+                    <svg class="graph-svg" id="graphSvg"></svg>
+
+                    <!-- Node 1: Decisor -->
+                    <div class="node-item active" id="node-1" data-node="1" style="left: 20%; top: 40%;">
+                        <div class="node-avatar ring-orange">
+                            <span>RS</span>
+                        </div>
+                        <div class="node-info">
+                            <span class="node-name">Dr. Ricardo Silveira</span>
+                            <span class="node-role">VP de Operações</span>
+                            <span class="node-badge badge-decisor">DECISOR</span>
+                        </div>
+                    </div>
+
+                    <!-- Node 2: Champion -->
+                    <div class="node-item" id="node-2" data-node="2" style="left: 55%; top: 22%;">
+                        <div class="node-avatar">
+                            <span>FA</span>
+                        </div>
+                        <div class="node-info">
+                            <span class="node-name">Fernanda Alves</span>
+                            <span class="node-role">Head de Sales Enablement</span>
+                            <span class="node-badge badge-champion">CHAMPION</span>
+                        </div>
+                    </div>
+
+                    <!-- Node 3: Influenciador TI -->
+                    <div class="node-item" id="node-3" data-node="3" style="left: 55%; top: 62%;">
+                        <div class="node-avatar">
+                            <span>GM</span>
+                        </div>
+                        <div class="node-info">
+                            <span class="node-name">Gabriel Mendes</span>
+                            <span class="node-role">Gerente de TI & SecOps</span>
+                            <span class="node-badge badge-influencer">INFLUENCIADOR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node Details Panel -->
+                <div class="node-details-panel" id="nodeDetails">
+                    <div class="details-header">
+                        <div class="user-profile-header">
+                            <div class="big-avatar" id="detailAvatar">RS</div>
+                            <div>
+                                <h3 id="detailName">Dr. Ricardo Silveira</h3>
+                                <p id="detailRole">VP de Operações • Nexus Tech</p>
+                            </div>
+                        </div>
+                        <a href="#" class="link-linkedin" onclick="event.preventDefault();">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                            </svg>
+                            Perfil LinkedIn
+                        </a>
+                    </div>
+
+                    <div class="details-body">
+                        <div class="detail-block">
+                            <span class="detail-label">ESTILO DE COMUNICAÇÃO</span>
+                            <p id="detailCommunication">Direto, orientado a dados. Prefere gráficos simples a apresentações longas.</p>
+                        </div>
+
+                        <div class="detail-block">
+                            <span class="detail-label">HISTÓRICO PROFISSIONAL</span>
+                            <p id="detailHistory">Ex-McKinsey (4 anos). Está há 2 anos na Nexus reestruturando processos operacionais de vendas.</p>
+                        </div>
+
+                        <div class="detail-block">
+                            <span class="detail-label">AFINIDADE / GATILHO PESSOAL</span>
+                            <p id="detailAffinity">Palestrou recentemente no evento <em>SaaS Summit 2026</em> sobre "Eficiência Operacional em Vendas B2B".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: DOSSIÊ COMPLETO MODULAR -->
+        <section class="section-container">
+            <div class="section-header">
+                <div class="section-title-wrap">
+                    <span class="section-num">03</span>
+                    <h2>Dossiê Estruturado da Empresa</h2>
+                </div>
+            </div>
+
+            <!-- TAB CONTROLS -->
+            <div class="tab-controls">
+                <button class="tab-btn active" data-tab="timeline">Linha do Tempo & Trajetória</button>
+                <button class="tab-btn" data-tab="news">Notícias & Sinais de Compra</button>
+                <button class="tab-btn" data-tab="pains">Dores & Matriz de Objeções</button>
+                <button class="tab-btn" data-tab="tech">Stack Tecnológico</button>
+            </div>
+
+            <div class="tab-content-area card-box">
+                <!-- TAB 1: TIMELINE -->
+                <div class="tab-pane active" id="tab-timeline">
+                    <div class="timeline-list">
+                        <div class="timeline-item">
+                            <div class="time-mark">AGO 2026</div>
+                            <div class="time-content">
+                                <h4>Fechamento da Rodada Série A (R$ 18M)</h4>
+                                <p>Aporte liderado pelo fundo Horizon Capital para acelerar contratações e expansão regional.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="time-mark">MAI 2026</div>
+                            <div class="time-content">
+                                <h4>Contratação da nova Head de Enablement</h4>
+                                <p>Fernanda Alves assume com a missão de padronizar o playbook de prospecção da equipe.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="time-mark">JAN 2026</div>
+                            <div class="time-content">
+                                <h4>Lançamento do Produto Enterprise</h4>
+                                <p>Abertura do segmento de clientes de grande porte, aumentando a necessidade de pesquisas pré-reunião mais profundas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: NEWS & SIGNALS -->
+                <div class="tab-pane" id="tab-news">
+                    <div class="news-grid">
+                        <div class="news-card">
+                            <span class="news-source">EXAME INOVAÇÃO • HÁ 12 DIAS</span>
+                            <h4>"Nexus Tech planeja dobrar equipe comercial até o final do ano"</h4>
+                            <p>Entrevista com o CEO destacando os gargalos de onboarding e capacitação de novos vendedores.</p>
+                        </div>
+                        <div class="news-card">
+                            <span class="news-source">VAGAS / LINKEDIN • HÁ 3 DIAS</span>
+                            <h4>Abertura de 12 vagas para SDRs e Account Executives</h4>
+                            <p>Indício claro de sobrecarga operacional e urgência por ferramentas que aumentem a produtividade por vendedor.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: PAINS & OBJECTIONS -->
+                <div class="tab-pane" id="tab-pains">
+                    <div class="pain-matrix">
+                        <div class="pain-row">
+                            <div class="pain-col pain-head">Dor Declarada</div>
+                            <div class="pain-col pain-head">Impacto Financeiro / Operacional</div>
+                            <div class="pain-col pain-head">Resposta Tática no Antessala</div>
+                        </div>
+                        <div class="pain-row">
+                            <div class="pain-col">Pesquisas manuais lentas antes de calls</div>
+                            <div class="pain-col">Perda de ~15 horas semanais por vendedor em tarefas burocráticas.</div>
+                            <div class="pain-col highlight-text">Automação de inteligência entregue 15 min antes no WhatsApp.</div>
+                        </div>
+                        <div class="pain-row">
+                            <div class="pain-col">Falta de contexto sobre o interlocutor</div>
+                            <div class="pain-col">Baixa taxa de conversão na primeira demonstração (apenas 12%).</div>
+                            <div class="pain-col highlight-text">Dossiê com perfil psicológico e histórico profissional detalhado.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 4: TECH STACK -->
+                <div class="tab-pane" id="tab-tech">
+                    <div class="tech-pills">
+                        <div class="tech-pill">
+                            <span class="tech-cat">CRM</span>
+                            <span class="tech-name">HubSpot Enterprise</span>
+                        </div>
+                        <div class="tech-pill">
+                            <span class="tech-cat">SALES ENGAGEMENT</span>
+                            <span class="tech-name">Salesloft</span>
+                        </div>
+                        <div class="tech-pill">
+                            <span class="tech-cat">COMMUNICATION</span>
+                            <span class="tech-name">Google Workspace & Slack</span>
+                        </div>
+                        <div class="tech-pill">
+                            <span class="tech-cat">MEETING PLATFORM</span>
+                            <span class="tech-name">Google Meet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- WHATSAPP PUSH MODAL SIMULATION -->
+    <div class="modal-overlay" id="whatsappModal">
+        <div class="phone-mockup">
+            <div class="phone-header">
+                <span class="phone-time">14:45</span>
+                <div class="phone-camera"></div>
+                <span class="phone-battery">98%</span>
+            </div>
+
+            <div class="whatsapp-card">
+                <div class="wa-header">
+                    <div class="wa-avatar">A</div>
+                    <div>
+                        <div class="wa-sender">ANTESSALA • INTELIGÊNCIA</div>
+                        <div class="wa-sub">Push de Notificação Pre-Meeting</div>
+                    </div>
+                    <span class="wa-time">Agora</span>
+                </div>
+
+                <div class="wa-body">
+                    <p>⚡ <strong>SEU WARMUP ESTÁ PRONTO</strong></p>
+                    <p>Reunião às 15:00 com <strong>Nexus Tech Solutions</strong></p>
+                    <hr>
+                    <p>📌 <strong>5 PONTOS DE ABERTURA:</strong></p>
+                    <p>1️⃣ <strong>Interlocutor:</strong> Dr. Ricardo Silveira (VP Operações, ex-McKinsey).</p>
+                    <p>2️⃣ <strong>Fato Quente:</strong> Captaram R$ 18M na Série A recente.</p>
+                    <p>3️⃣ <strong>Dor:</strong> Perda de 45 min por pré-vendedor em pesquisa manual.</p>
+                    <p>4️⃣ <strong>Objeção:</strong> Acharão que substitui o CRM. Deixe claro que opera antes do CRM.</p>
+                    <p>5️⃣ <strong>Gancho:</strong> Cumprimente pela Série A e abra falando de ganho de eficiência no time.</p>
+                    <hr>
+                    <div class="wa-link">🔗 Toque aqui para abrir o Dossiê Completo no Antessala</div>
+                </div>
+            </div>
+
+            <button class="btn-close-modal" id="closeWhatsappModal">Fechar Simulação</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="app-footer">
+        <div class="container footer-content">
+            <p><strong>ANTESSALA</strong> — Design System Neo-Brutalista Clean &bull; Laranja Amber & Grafite Monocromático</p>
+            <p class="slogan-footer">"Inteligência tática antes do primeiro 'olá'."</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
